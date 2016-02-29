@@ -1,0 +1,12 @@
+#
+*.pdf
+*/*.pdf
+/作业/
+*.avi
+*/*.avi
+*.jpg
+*/*.jpg
+*.gif
+*/*.gif
+*.swf
+*/*.swf
