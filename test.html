@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo of Javascript</title>
+		<script src="jquery-1.12.3.min.js"></script>
+	</head>
+	<body>
+		<script>
+
+var t;
+var ssarray;
+
+$(document).ready(function(){
+	$("#gid").load("abc.txt");
+	$("#gid").css("width", "100%");
+	$("#id2").css("background-color","red");
+	$("#chosen").attr("value", "这里显示被选中的队伍。");
+	$("#drawbutton").click(function(){
+		$("#gid").fadeOut(3000);
+		$("#drawbutton").attr("disabled", "disabled");
+		var ss = $("#gid").text();
+		ssarray = ss.split("\n");
+		var length = ssarray.length;
+		//document.write(ssarray.length);
+		t = setTimeout(f = function(){
+		var rand = Math.random();
+		var idx = Math.round(length*rand);
+		$("#chosen").attr("value", ssarray[idx]);
+		t = setTimeout(f, 50);
+		}, 50);
+	});
+
+	$("#stopbutton").click(function(){
+		clearTimeout(t);
+		$("#gid").fadeIn(3000);
+		$("#drawbutton").removeAttr("disabled");
+	});
+});
+		</script>
+		<p id="id2"> Draw Lots System V0.01 </p>
+		<form>
+			<textarea rows="10" cols="30" name="grouparray" id="gid"></textarea>
+			<input type="text" name="chosen" id="chosen" > 
+			<input type="button" name="drawbutton" value="Draw!" id="drawbutton">
+			<input type="button" name="stopbutton" value="Stop" id="stopbutton">
+			
+		</form>
+	</body>
+</html>
