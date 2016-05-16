@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$("#drawbutton").click(function(){
 		$("#gid").fadeOut(3000);
 		$("#drawbutton").attr("disabled", "disabled");
-		var ss = $("#gid").text();
+		var ss = $("#gid").val();
 		ssarray = ss.split("\n");
 		var length = ssarray.length;
 		//document.write(ssarray.length);
