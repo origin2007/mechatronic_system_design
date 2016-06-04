@@ -7,4 +7,8 @@ Class handouts and other materials needed for this course
 大家可以下载下去自己慢慢看。分组作业的PPT也在里面，大家仔细找。
 一般只要下载自己需要的文件就行了，如果要全部下载，可以在右上角找打包下载的链接。
 
+# 作业上交情况
+
+看这里：[点击]( mechatronic_system_design/作业上交情况.md )
+
 Good Luck.
