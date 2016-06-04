@@ -9,6 +9,6 @@ Class handouts and other materials needed for this course
 
 # 作业上交情况
 
-看这里：[点击]( mechatronic_system_design/作业上交情况.md )
+看这里：[点击](作业上交情况.md )
 
 Good Luck.
