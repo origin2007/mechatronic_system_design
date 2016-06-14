@@ -9,6 +9,9 @@ Class handouts and other materials needed for this course
 
 # 作业上交情况
 
-看这里：[点击](作业上交情况.md )
+还有大约10来位同学没有上交作业，还没有成绩。请尽快上交。
+
+初步成绩见[附件](https://github.com/origin2007/mechatronic_system_design/blob/master/%E6%9C%BA%E7%94%B5%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1.xlsx)。
+
 
 Good Luck.
