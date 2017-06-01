@@ -5,7 +5,7 @@
 		<title>Demo of Javascript</title>
 		<script src="jquery-1.12.3.min.js"></script>
 	</head>
-	<body>
+	<body style="font-family: sans-serif; font-size: 30px;">
 		<script>
 
 var t;
@@ -14,11 +14,12 @@ var ssarray;
 $(document).ready(function(){
 	$("#gid").load("abc.txt");
 	$("#gid").css("width", "100%");
+	$("#gid").css("font-size", "28px");
 	$("#chosen").css("width", "100%");
-	$("#id2").css("background-color","red");
+	//$("#id2").css("background-color","red");
 	$("#chosen").attr("value", "这里显示被选中的队伍。");
 	$("#drawbutton").click(function(){
-		$("#gid").fadeOut(3000);
+		$("#gid").fadeOut(1000);
 		$("#drawbutton").attr("disabled", "disabled");
 		var ss = $("#gid").val();
 		ssarray = ss.split("\n");
@@ -34,18 +35,18 @@ $(document).ready(function(){
 
 	$("#stopbutton").click(function(){
 		clearTimeout(t);
-		$("#gid").fadeIn(3000);
+		$("#gid").fadeIn(1000);
 		$("#drawbutton").removeAttr("disabled");
 	});
 });
 		</script>
-		<p id="id2"> Draw Lots System V0.01 </p>
+		<p id="id2" style="font-size: 50px"> Draw Lots System V0.02 </p>
 		<form>
 			<textarea rows="10" cols="30" name="grouparray" id="gid"></textarea>
-			<input type="text" name="chosen" id="chosen" > 
+			<input type="text" name="chosen" id="chosen" style="font-size:30px;" > 
 			<br />
-			<input type="button" name="drawbutton" value="Draw!" id="drawbutton">
-			<input type="button" name="stopbutton" value="Stop" id="stopbutton">
+			<input type="button" name="drawbutton" value="Draw!" id="drawbutton" style="font-size:30px">
+			<input type="button" name="stopbutton" value="Stop" id="stopbutton" style="font-size:30px">
 			
 		</form>
 	</body>
